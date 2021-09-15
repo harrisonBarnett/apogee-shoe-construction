@@ -14,13 +14,11 @@ body {
 ::selection {
     background: none;
 }
-.title-container {
+.info-container {
     position: absolute;
-    top: 50%;
+    width: 50%;
+    height: 100%;
     right: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateY(-50%);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -44,21 +42,22 @@ body {
 .title-group {
     display: flex;
     justify-content: center;
-    gap: 1vw;
+    gap: 2vw;
 
     font-size: 2.4vw;
 }
 .footer {
     position: absolute;
-    right: .5vw;
-    bottom: .5vw;
+    right: 1vw;
+    bottom: 1vw;
     display: flex;
     flex-direction: column;
+    gap: .5vw;
     font-family: Arial;
 }
 .footer p {
     margin: 0;
-    color: rgba(124, 124, 124, 0.25);
+    color: #7c7c7c40;
 }
 .social {
     width: 100%;
@@ -119,5 +118,59 @@ body {
 }
 #swiper-9 {
     background-image: url('./images/8J3A9674-Edit-Edit.JPG');
+}
+
+@media only screen and (max-width: 600px) {
+    .mySwiper {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        box-shadow: none;
+    }
+
+    .swiper-slide {
+        background-position: center;
+    }
+
+    .info-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 75%;
+        background-image: linear-gradient(
+            rgba(15, 15, 15, 0),
+            rgba(15, 15, 15, 1)
+        );
+    }
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #title-0,
+    #title-1 {
+        font-size: 9vw;
+    }
+    .coming-soon {
+        font-size: 8vw;
+    }
+
+    .footer {
+        width: 100%;
+    }
+    .footer p {
+        margin: 1em;
+        font-size: .8em;
+        color: rgba(255, 255, 255, 0.1);
+        text-align: center;
+    }
+    .social{
+        justify-content: center;
+    }
+
 }
 
