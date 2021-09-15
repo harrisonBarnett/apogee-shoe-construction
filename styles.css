@@ -14,11 +14,15 @@ body {
 
 .title-container {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateY(-50%);
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .title {
     margin: 0;
@@ -27,22 +31,41 @@ body {
     text-align: right;
     color: none;
 
-    -webkit-text-stroke: 2px rgba(255, 183, 74, 0.912);
+    -webkit-text-stroke: 1px rgb(255, 183, 74);
     color: transparent;
-
-
-    font-size: 6vw;
-    font-weight: 900;
-    letter-spacing: .1em;
 }
-
+.coming-soon {
+    font-size: 6vw;
+    text-align: center;
+}
 .title-group {
-    position: absolute;
-    top: 2vw;
-    right: 2vw;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
 
+    font-size: 2.2vw;
+}
+.footer {
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
     display: flex;
     flex-direction: column;
+    font-family: Arial;
+}
+.footer p {
+    margin: 0;
+    color: rgba(0,0,0,.5);
+}
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.social img {
+    height: 2em;
+    width: 2em;
+    opacity: .5;
 }
 
 .mySwiper {
