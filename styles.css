@@ -10,6 +10,7 @@ body {
     width: 100vw;
     margin: 0;
     background: rgb(44, 44, 44);
+    overflow: hidden;
 }
 ::selection {
     background: none;
@@ -57,7 +58,8 @@ body {
 }
 .footer p {
     margin: 0;
-    color: #7c7c7c40;
+    font-size: .8em;
+    color: rgba(255, 255, 255, 0.075);
 }
 .social {
     width: 100%;
@@ -149,11 +151,14 @@ body {
     .title-container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+    }
+    .title-group {
+        gap: 3vw;
     }
     #title-0,
     #title-1 {
-        font-size: 9vw;
+        font-size: 9.5vw;
     }
     .coming-soon {
         font-size: 8vw;
@@ -165,7 +170,7 @@ body {
     .footer p {
         margin: 1em;
         font-size: .8em;
-        color: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.15);
         text-align: center;
     }
     .social{
