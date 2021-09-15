@@ -9,9 +9,11 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
-    background: #2c2c2c;
+    background: rgb(44, 44, 44);
 }
-
+::selection {
+    background: none;
+}
 .title-container {
     position: absolute;
     top: 50%;
@@ -31,11 +33,12 @@ body {
     text-align: right;
     color: none;
 
-    -webkit-text-stroke: 1px rgb(255, 183, 74);
+    -webkit-text-stroke: 1px rgb(255, 198, 74);
     color: transparent;
 }
+
 .coming-soon {
-    font-size: 6vw;
+    font-size: 4vw;
     text-align: center;
 }
 .title-group {
@@ -43,19 +46,19 @@ body {
     justify-content: center;
     gap: 1vw;
 
-    font-size: 2.2vw;
+    font-size: 2.4vw;
 }
 .footer {
     position: absolute;
-    right: 1vw;
-    bottom: 1vw;
+    right: .5vw;
+    bottom: .5vw;
     display: flex;
     flex-direction: column;
     font-family: Arial;
 }
 .footer p {
     margin: 0;
-    color: rgba(0,0,0,.5);
+    color: rgba(124, 124, 124, 0.25);
 }
 .social {
     width: 100%;
@@ -75,16 +78,14 @@ body {
     width: 50%;
     z-index: -1;
 
-    box-shadow: -4px 0 4px rgba(0,0,0,.25),
-                4px 0 4px rgba(0,0,0,.25),
-                -4px 0 8px rgba(0,0,0,.25),
-                4px 0 8px rgba(0,0,0,.25),
-                -4px 0 16px rgba(0,0,0,.25),
-                4px 0 16px rgba(0,0,0,.25);
+    box-shadow: 4px 0 4px rgba(0,0,0,.15),
+                4px 0 8px rgba(0,0,0,.15),
+                4px 0 16px rgba(0,0,0,.15);
 }
 
 .swiper-slide {
-    background-position: center;
+    background-size: cover;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
