@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+/* font-fmaily: 'Montserrat' */
+
+html,
+body {
+    /* background: black; */
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: #2c2c2c;
+}
+
+.title-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    text-align: center;
+    color: none;
+
+    -webkit-text-stroke: 2px rgba(255, 183, 74, 0.912);
+    color: transparent;
+
+
+    font-size: 6vw;
+    font-weight: 900;
+    letter-spacing: .1em;
+}
+
+.title-group {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transform: translateX(-50%);
+
+}
+.mySwiper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 75%;
+    z-index: -1;
+
+    box-shadow: -4px 0 4px rgba(0,0,0,.25),
+                4px 0 4px rgba(0,0,0,.25),
+                -4px 0 8px rgba(0,0,0,.25),
+                4px 0 8px rgba(0,0,0,.25),
+                -4px 0 16px rgba(0,0,0,.25),
+                4px 0 16px rgba(0,0,0,.25);
+}
+
+.swiper-slide {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* BG IMAGES */
+#swiper-0 {
+    background-image: url('./images/8J3A9518-Edit-2-Edit.JPG');
+}
+#swiper-1 {
+    background-image: url('./images/8J3A9523-Edit-2-Edit.JPG');
+}
+#swiper-2 {
+    background-image: url('./images/8J3A9537-Edit-2-Edit.JPG');
+}
+#swiper-3 {
+    background-image: url('./images/8J3A9556-Edit-2-Edit.JPG');
+}
+#swiper-4 {
+    background-image: url('./images/8J3A9564-Edit-Edit.JPG');
+}
+#swiper-5 {
+    background-image: url('./images/8J3A9583-Edit-Edit.JPG');
+}
+#swiper-6 {
+    background-image: url('./images/8J3A9617-Edit-Edit.JPG');
+}
+#swiper-7 {
+    background-image: url('./images/8J3A9654-Edit-Edit.JPG');
+}
+#swiper-8 {
+    background-image: url('./images/8J3A9661-Edit-Edit.JPG');
+}
+#swiper-9 {
+    background-image: url('./images/8J3A9674-Edit-Edit.JPG');
+}
+
